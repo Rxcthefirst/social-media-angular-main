@@ -1,1 +1,5 @@
-/src/environments/environments.ts
+node_modules
+
+.angular
+
+/src/environments

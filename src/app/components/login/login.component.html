@@ -1,19 +1,50 @@
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <mat-card class="box">
+
     <mat-card-header>
-      <mat-card-title>Log in</mat-card-title>
+      <mat-card-title>
+        <div  class="flex justify-evenly mb-5">
+          <a 
+            class="font-semibold text-blue-600 text-[20px]"
+            [routerLink]="['/login']"
+          >Log in</a> 
+          <a 
+            [routerLink]="['/register']"
+            class="font-normal text-gray-400 text-[20px]"
+          >Register</a>
+        </div>
+      </mat-card-title>
+     
     </mat-card-header>
+
     <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit($event)">
-      <mat-card-content>
+      <mat-card-content [ngStyle]="{'padding': '0'}">
         <mat-form-field class="full-width">
-          <input matInput placeholder="Email" formControlName="email">
+          <mat-label class="text-sm">Email</mat-label>
+          <input matInput placeholder="" formControlName="email">
         </mat-form-field>
+
         <mat-form-field class="full-width">
-          <input matInput placeholder="Password" type="password" formControlName="password">
+          <mat-label class="text-sm">Password</mat-label>
+          <input matInput placeholder="" type="password" formControlName="password">
         </mat-form-field>
+
       </mat-card-content>
-      <button mat-stroked-button color="accent" class="btn-block" type="submit">Log in</button>
+      <button mat-raised-button color="primary" class="btn-block tracking-wider" type="submit">Log in</button>
     </form>
-    <a class="login-rerout-link" [routerLink]="['/register']">Don't have an account?</a>
+
+    <p
+      *ngIf="hasError"
+      class="text-red-500 text-center"
+    >
+      {{ message }}
+    </p>
+
+    <a
+      class="flex justify-center text-center text-blue-500/90 pt-2 pb-4 hover:text-blue-700"
+      routerLink="/"
+    >
+      Forgot password?
+    </a>
   </mat-card>
 </div>
