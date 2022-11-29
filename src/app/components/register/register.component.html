@@ -1,25 +1,71 @@
-<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+<div class="login-wrapper " fxLayout="row" fxLayoutAlign="center center">
+
   <mat-card class="box">
+
     <mat-card-header>
-      <mat-card-title>Register</mat-card-title>
+      <mat-card-title>
+        <div class="flex justify-evenly mb-5">
+          <a 
+            class="font-normal text-gray-400 text-[20px]"
+            [routerLink]="['/login']"
+          >Log in</a> 
+          <a 
+            [routerLink]="['/register']"
+            class="text-blue-600 font-semibold text-[20px]"
+          >Register</a>
+        </div>
+      </mat-card-title>
     </mat-card-header>
+
     <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit($event)">
-      <mat-card-content>
+      <mat-card-content [ngStyle]="{'padding': '0'}">
+
         <mat-form-field class="full-width">
-          <input matInput placeholder="Email" formControlName="email">
+          <mat-label class="text-sm">Email</mat-label>
+          <input matInput placeholder="" formControlName="email">
+          <mat-error *ngIf="this.registerForm.controls.email.hasError('email') ||
+                            this.registerForm.controls.email.hasError('required')"
+          >{{ this.registerForm.controls.email.hasError('email') ? "Wrong email format" : "Email is required"}}</mat-error>
         </mat-form-field>
+
+
         <mat-form-field class="full-width">
-          <input matInput placeholder="Password" type="password" formControlName="password">
+          <mat-label class="text-sm">Password</mat-label>
+          <input matInput placeholder="" type="password" formControlName="password">
+          <mat-error
+            *ngIf="this.registerForm.controls.password.hasError('required') ||
+                   this.registerForm.controls.password.hasError('minLength')"
+          >{{ this.registerForm.controls.password.hasError('required') ? "Last name is required" : "The password has to be at least 6 characters"}}</mat-error>
         </mat-form-field>
+        
+
         <mat-form-field class="full-width">
-          <input matInput placeholder="First Name" formControlName="firstName">
+          <mat-label class="text-sm">First Name</mat-label>
+          <input matInput placeholder="" formControlName="firstName">
+          <mat-error
+            *ngIf="this.registerForm.controls.firstName.hasError('required')"
+          >Last name is required</mat-error>
         </mat-form-field>
+
+
         <mat-form-field class="full-width">
-          <input matInput placeholder="Last Name" formControlName="lastName">
+          <mat-label class="text-sm">Last Name</mat-label>
+          <input matInput placeholder="" formControlName="lastName">
+          <mat-error
+            *ngIf="this.registerForm.controls.lastName.hasError('required')"
+          >Last name is required</mat-error>
         </mat-form-field>
+
+        
       </mat-card-content>
-      <button mat-stroked-button color="accent" class="btn-block" type="submit">Register</button>
+      <button mat-raised-button color="primary" class="btn-block tracking-wider" type="submit">Register</button>
     </form>
-    <a class="login-rerout-link" [routerLink]="['/login']">Already have an account?</a>
+
+    <p
+      *ngIf="hasError"
+      class="text-red-500 text-center my-4"
+    >
+      {{ message }}
+    </p>
   </mat-card>
 </div>
