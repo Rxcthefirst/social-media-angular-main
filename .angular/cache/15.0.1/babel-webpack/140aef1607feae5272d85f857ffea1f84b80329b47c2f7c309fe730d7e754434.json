@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  withCredentials: true,\n  baseUrl: \"http://52.37.182.192:8081\",\n  headers: {\n    'Content-Type': 'application/json',\n    'Access-Control-Allow-Origin': 'http://localhost:4200'\n  }\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

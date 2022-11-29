@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default class Post {\n  constructor(id, text, imageUrl, author, comments) {\n    this.id = id;\n    this.text = text;\n    this.imageUrl = imageUrl;\n    this.author = author;\n    this.comments = comments;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
