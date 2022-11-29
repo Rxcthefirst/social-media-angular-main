@@ -23,24 +23,40 @@
         <mat-form-field class="full-width">
           <mat-label class="text-sm">Email</mat-label>
           <input matInput placeholder="" formControlName="email">
-          <mat-error *ngIf="isEmailInvalid">Wrong email</mat-error>
+          <mat-error *ngIf="this.registerForm.controls.email.hasError('email') ||
+                            this.registerForm.controls.email.hasError('required')"
+          >{{ this.registerForm.controls.email.hasError('email') ? "Wrong email format" : "Email is required"}}</mat-error>
         </mat-form-field>
+
 
         <mat-form-field class="full-width">
           <mat-label class="text-sm">Password</mat-label>
           <input matInput placeholder="" type="password" formControlName="password">
+          <mat-error
+            *ngIf="this.registerForm.controls.password.hasError('required') ||
+                   this.registerForm.controls.password.hasError('minLength')"
+          >{{ this.registerForm.controls.password.hasError('required') ? "Last name is required" : "The password has to be at least 6 characters"}}</mat-error>
         </mat-form-field>
         
+
         <mat-form-field class="full-width">
           <mat-label class="text-sm">First Name</mat-label>
           <input matInput placeholder="" formControlName="firstName">
+          <mat-error
+            *ngIf="this.registerForm.controls.firstName.hasError('required')"
+          >Last name is required</mat-error>
         </mat-form-field>
+
 
         <mat-form-field class="full-width">
           <mat-label class="text-sm">Last Name</mat-label>
           <input matInput placeholder="" formControlName="lastName">
+          <mat-error
+            *ngIf="this.registerForm.controls.lastName.hasError('required')"
+          >Last name is required</mat-error>
         </mat-form-field>
 
+        
       </mat-card-content>
       <button mat-raised-button color="primary" class="btn-block tracking-wider" type="submit">Register</button>
     </form>
