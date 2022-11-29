@@ -1,9 +1,10 @@
 <div class="login-wrapper " fxLayout="row" fxLayoutAlign="center center">
+
   <mat-card class="box">
 
     <mat-card-header>
       <mat-card-title>
-        <div class="flex justify-evenly mb-3">
+        <div class="flex justify-evenly mb-5">
           <a 
             class="font-normal text-gray-400 text-[20px]"
             [routerLink]="['/login']"
@@ -20,23 +21,23 @@
       <mat-card-content [ngStyle]="{'padding': '0'}">
 
         <mat-form-field class="full-width">
-          <mat-label>Email</mat-label>
+          <mat-label class="text-sm">Email</mat-label>
           <input matInput placeholder="" formControlName="email">
           <mat-error *ngIf="isEmailInvalid">Wrong email</mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width">
-          <mat-label>Password</mat-label>
+          <mat-label class="text-sm">Password</mat-label>
           <input matInput placeholder="" type="password" formControlName="password">
         </mat-form-field>
         
         <mat-form-field class="full-width">
-          <mat-label>First Name</mat-label>
+          <mat-label class="text-sm">First Name</mat-label>
           <input matInput placeholder="" formControlName="firstName">
         </mat-form-field>
 
         <mat-form-field class="full-width">
-          <mat-label>Last Name</mat-label>
+          <mat-label class="text-sm">Last Name</mat-label>
           <input matInput placeholder="" formControlName="lastName">
         </mat-form-field>
 
