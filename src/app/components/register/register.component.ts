@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { delay } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -8,7 +9,13 @@ import { AuthService } from 'src/app/services/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
+
+  isEmailInvalid = false;
+
+
+  hasError = false;
+  message = "";
 
   registerForm = new FormGroup({
     firstName: new FormControl(''),
@@ -19,18 +26,23 @@ export class RegisterComponent implements OnInit {
   
 
   constructor(private authService: AuthService, private router: Router) { }
-
-  ngOnInit(): void {
-  }
   
   onSubmit(e: any): void {
-    e.preventDefault()
+    e.preventDefault();
+    this.isEmailInvalid = true;
+    
+    this.hasError = false;
     this.authService.register(this.registerForm.value.firstName || "", this.registerForm.value.lastName || "", this.registerForm.value.email || "", this.registerForm.value.password || "")
-      .subscribe(
-        (response) => {
+      .subscribe({
+        next: response => {
           this.router.navigate(['login'])
+        },
+
+        error: response => {
+          this.hasError = true;
+          this.message = response.error;
         }
-      )
+    })
   }
 
 }
