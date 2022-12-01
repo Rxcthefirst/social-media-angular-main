@@ -15,6 +15,10 @@ import { CommentComponent } from './components/comment/comment.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { UserInitialsPipe } from './pipes/user-initials.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MatIconModule } from '@angular/material/icon';
+import { FriendsPageComponent } from './pages/friends-page/friends-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { ProfilePersonalInformationComponent } from './components/profile/profile-personal-information/profile-personal-information.component';
 
 
 @NgModule({
@@ -28,6 +32,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     UserCardComponent,
     NavbarComponent,
     UserInitialsPipe,
+    FriendsPageComponent,
+    ProfilePageComponent,
+    ProfilePersonalInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +43,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
