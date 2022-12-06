@@ -7,6 +7,7 @@ import { PostService } from 'src/app/services/post.service';
 import { throwError } from 'rxjs';
 
 import { VoteService } from 'src/app/services/vote.service';
+import User from '../../../models/User';
 
 @Component({
   selector: 'app-vote-button',
@@ -17,36 +18,28 @@ export class VoteButtonComponent implements OnInit {
 
   @Input() post: Post;
   votePayload: Vote;
-  upvoteColor: string;
-  downvoteColor: string;
-  isLoggedIn: boolean;
 
-  constructor(private voteService: VoteService,
+  constructor(
+    private voteService: VoteService,
     private authService: AuthService,
-    private postService: PostService) {
+    private postService: PostService
+    ) {
 
-    this.votePayload = {
-      voteType: 1,
-      postId: 1
-    }
-    
-    this.authService.loggedIn.subscribe((data: boolean) => this.isLoggedIn = data);
   }
 
   ngOnInit(): void {
     this.updateVoteDetails();
   }
 
+  
   upvotePost() {
     this.votePayload.voteType = VoteType.UPVOTE;
     this.vote();
-    this.downvoteColor = '';
   }
 
   downvotePost() {
     this.votePayload.voteType = VoteType.DOWNVOTE;
     this.vote();
-    this.upvoteColor = '';
   }
 
   private vote() {
@@ -54,8 +47,6 @@ export class VoteButtonComponent implements OnInit {
     this.voteService.vote(this.votePayload).subscribe(() => {
       this.updateVoteDetails();
     }, error => {
-      this.toastr.error(error.error.message);
-      throwError(error);
     });
   }
 
@@ -64,4 +55,5 @@ export class VoteButtonComponent implements OnInit {
       this.post = post;
     });
   }
+    
 }
