@@ -1,7 +1,26 @@
 <p>
-    <mat-toolbar>
-        <span [routerLink]="['/post-feed']">Revature Social Media</span>
-        <span class="spacer"></span>
-        <button mat-button (click)="logout();">Logout</button>
+    <mat-toolbar class="box-shadow">
+        <div class="w-full flex justify-between items-center">
+            <span 
+                class="grid grid-flow-col auto-cols-max items-center cursor-pointer"
+                [routerLink]="['/post-feed']"
+            >
+                <img class="w-10" src="assets/images/favicon-tab.png" alt="Logo">
+                <span class="text-shadow text-blue-800">Social Sources</span>
+            </span>
+            <div class="flex items-center"
+            >
+                <a 
+                    routerLink="/profile"
+                    [ngClass]="{
+                        'active-icon relative' : router.url === '/profile'
+                    }" 
+                    class="flex items-center"
+                >
+                    <mat-icon [color]="router.url === '/profile' ? 'primary' : ''">account_circle</mat-icon>
+                </a>
+            </div>
+            <button mat-button (click)="logout();">Logout</button>
+        </div>
     </mat-toolbar>
 </p>

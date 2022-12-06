@@ -15,6 +15,16 @@ import { CommentComponent } from './components/comment/comment.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { UserInitialsPipe } from './pipes/user-initials.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MatIconModule } from '@angular/material/icon';
+import { FriendsPageComponent } from './pages/friends-page/friends-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { ProfilePersonalInformationComponent } from './components/profile/profile-personal-information/profile-personal-information.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { EditProfileComponent } from './components/profile/edit-profile/edit-profile.component';
+import { EditProfileSidebarComponent } from './components/profile/edit-profile-sidebar/edit-profile-sidebar.component';
+import { EditProfileSecuritySettingsComponent } from './components/profile/edit-profile-security-settings/edit-profile-security-settings.component';
+import { ProfileHeroBannerComponent } from './components/profile/profile-hero-banner/profile-hero-banner.component';
+import { FourOFourPageComponent } from './pages/four-o-four-page/four-o-four-page.component';
 
 
 @NgModule({
@@ -28,6 +38,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     UserCardComponent,
     NavbarComponent,
     UserInitialsPipe,
+    FriendsPageComponent,
+    ProfilePageComponent,
+    ProfilePersonalInformationComponent,
+    EditProfileComponent,
+    EditProfileSidebarComponent,
+    EditProfileSecuritySettingsComponent,
+    ProfileHeroBannerComponent,
+    FourOFourPageComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +54,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
