@@ -1,0 +1,46 @@
+#profile {
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr;
+    grid-template-rows: 1fr max-content max-content;
+}
+
+#background {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+/* Requires fix */
+/* #avatar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: black;
+} */
+
+#user_photo {
+    filter: brightness(140%);
+    position: relative;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+}
+
+#profile_nav {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+[type="file"] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}

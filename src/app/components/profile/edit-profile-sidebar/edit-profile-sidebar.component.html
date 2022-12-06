@@ -1,0 +1,77 @@
+
+<div class="grid shadow-md bg-white">
+
+    <h2 class="pt-4 px-6 font-semibold">Edit Profile</h2>
+    <ul class="px-1">
+        <li>
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" 
+                (click)="clickedButton($event, 'General Information')">
+
+                <mat-icon>account_circle</mat-icon>
+
+                <span class="ml-2">General Information</span>
+            </a>
+        </li>
+
+        <li>
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" 
+                (click)="clickedButton($event, 'Education')"
+            >
+
+                <mat-icon>local_library</mat-icon>
+
+                <span class="ml-2">Education</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                (click)="clickedButton($event, 'Work')"
+            >
+                <mat-icon>work</mat-icon>
+
+                <span class="ml-2">Work</span>
+            </a>
+
+        </li>
+        <li class="mb-4">
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                (click)="clickedButton($event, 'Martial Status')"
+            >
+                <mat-icon>child_friendly</mat-icon>
+
+                <span class="ml-2">Martial Status</span>
+            </a>
+      </li>
+    </ul>
+    
+    <hr />
+    <h2 class="pt-4 px-6 font-semibold">Settings</h2>
+    <ul class="px-1">
+        <li class="mb-3">
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary"
+                (click)="clickedButton($event, 'Security Settings')"
+            >
+                
+                <mat-icon>security</mat-icon>
+
+                <span class="ml-2">Security Settings</span>
+            </a>
+        </li>
+    </ul>
+
+    <hr />
+    <ul class="px-1">
+        <li class="my-3">
+            <a class="flex items-center text-sm py-2 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx3" 
+                (click)="logout()"
+            >
+           
+                <mat-icon>exit_to_app</mat-icon>
+
+                <span class="ml-2" >Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
