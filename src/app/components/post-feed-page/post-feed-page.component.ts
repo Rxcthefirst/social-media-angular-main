@@ -20,6 +20,7 @@ export class PostFeedPageComponent implements OnInit {
 
   posts: Post[] = [];
   createPost:boolean = false;
+  profanity: boolean = false;
 
   constructor(private postService: PostService, private authService: AuthService) { }
 
@@ -42,6 +43,11 @@ export class PostFeedPageComponent implements OnInit {
         (response) => {
           this.posts = [response, ...this.posts]
           this.toggleCreatePost()
+        }, error => {
+          if (error.error === "profanity") {
+            console.log('hello');
+            this.profanity = true;
+          }
         }
       )
   }

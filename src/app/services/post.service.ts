@@ -17,7 +17,7 @@ export class PostService {
     return this.http.get<Post[]>(`${this.postUrl}`, {headers: environment.headers, withCredentials: environment.withCredentials} )
   }
 
-  upsertPost(post: Post): Observable<Post> {
+  upsertPost(post: Post): Observable<any> {
     return this.http.put<Post>(`${this.postUrl}`, post, {headers: environment.headers, withCredentials: environment.withCredentials})
   }
 }

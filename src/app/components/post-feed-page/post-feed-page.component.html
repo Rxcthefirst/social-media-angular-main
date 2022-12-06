@@ -22,6 +22,9 @@
                 <mat-label>Add an Image?</mat-label>
                 <input matInput formControlName="imageUrl">
             </mat-form-field>
+            <div *ngIf="this.profanity">
+                No profanity!
+            </div>
             <div align="end">
                 <button mat-raised-button color="warn" (click)="toggleCreatePost()">Cancel</button>
                 <button mat-raised-button color="primary" (click)="submitPost($event)">Post</button>
