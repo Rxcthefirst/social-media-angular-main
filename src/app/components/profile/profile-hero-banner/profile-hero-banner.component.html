@@ -1,0 +1,57 @@
+<div class="relative box-shadow">
+    <div class="" id="profile">
+        
+        <div 
+            class="absolute top-6 left-16"
+            *ngIf="isEditable"
+        >
+            <label for="file" class="text-white/40 text-shadow hover:text-white/90 transition-colors cursor-pointer">
+                <mat-icon class="scale-125">photo_camera</mat-icon>
+            </label>
+            <input 
+                type="file" 
+                id="file" 
+                accept="image/jpg, image/jpeg, image/png"
+                (change)="'Do something'" 
+            />
+        </div>    
+
+        <div class="h-64"
+             [style.background-image]="'url(' + heroBannerInformation.backgroundImageUrl + ')'"
+             id="background">
+        </div>
+
+        <div class="grid grid-flow-col grid-cols-[max-content_1fr]" id="user_photo">
+            <img class="relative bg-white w-[120px] h-[120px] border-[5px] rounded-full border-white ml-5 mr-3 mt-3" 
+                 id="avatar" 
+                 [src]="heroBannerInformation.avatarImageUrl" alt="user's photo"
+            />
+            
+            <div class="grid items-end">
+                <div class="flex items-center justify-between w-full">
+                    <span class="text-white text-2xl text-shadow"> {{ heroBannerInformation.firstName + ' ' + heroBannerInformation.lastName }}</span>
+
+
+                    <!-- Edit Profile Link-->
+                    <a class="flex items-center uppercase text-[12px] font-semibold text-white text-shadow cursor-pointer"
+                        *ngIf="isEditable"
+                        (click)="openDialog()"
+                    >
+                        <span class="tracking-wider">Edit profile</span>
+                        <mat-icon class="ml-1 mr-5">play_arrow</mat-icon>
+                    </a>
+
+                </div>
+                
+                <span class="font-semibold text-sm pb-1 text-gray-700">
+                    {{ heroBannerInformation.currentCity }}  
+                    {{ heroBannerInformation.currentCity && heroBannerInformation.currentCountry ? ', ': '' }}
+                    {{ heroBannerInformation.currentCountry }}
+                </span>
+            </div>
+        </div>
+    
+        <!-- White line -->
+        <div class="bg-white h-8" id="profile_nav"></div>
+    </div>
+</div>

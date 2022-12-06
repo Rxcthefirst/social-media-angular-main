@@ -4,23 +4,48 @@
 </h4>
 
 <ul class="text-gray-700 pl-2">
-    <li class="flex items-center mb-1">
+    <li class="flex items-center mb-1"
+        *ngIf="profilePersonalInfo.schoolName"
+    >
         <mat-icon class="scale-75">local_library</mat-icon>
-        <span>Studied at <b>University of London</b></span>
+        <span>Studied at <b>{{ profilePersonalInfo.schoolName }}</b></span>
     </li>
 
-    <li class="flex items-center mb-1">
+    <li class="flex items-center mb-1"
+        *ngIf="profilePersonalInfo.jobTitle"
+    >
         <mat-icon class="scale-75">work</mat-icon> 
-        <span>Software Developer at <a class="text-blue-600 underline" href="https://revature.com/">Revature</a></span>
+        <span>{{ profilePersonalInfo.jobTitle }} at 
+            <a 
+                class="text-blue-600 underline" 
+                [href]="profilePersonalInfo.companyUrl" 
+                target="_blank"
+            >
+                {{ profilePersonalInfo.companyName }}
+            </a>
+        </span>
     </li>
 
-    <li class="flex items-center mb-1">
+    <li 
+        class="flex items-center mb-1"
+        *ngIf="profilePersonalInfo.bornCity || profilePersonalInfo.bornCountry"
+    >
         <mat-icon class="scale-75">location_on</mat-icon>
-        <span>From: <b>Manchester, UK</b></span> 
+        <span>From: 
+            <b>
+                {{ profilePersonalInfo.bornCity }}{{ profilePersonalInfo.bornCity && profilePersonalInfo.bornCountry ? ', ' : '' }}
+                {{ profilePersonalInfo.bornCountry }}
+            </b>
+        </span> 
     </li>
 
-    <li class="flex items-center mb-1">
+    <li 
+        class="flex items-center mb-1"
+        *ngIf="profilePersonalInfo.martialStatus"
+    >
         <mat-icon class="scale-75">favorite</mat-icon>
-        <span>Martial Status: <b>Married</b></span>
+        <span>Martial Status: <b>{{ profilePersonalInfo.martialStatus }}</b></span>
     </li>
+
+    <ng-content></ng-content>
 </ul>

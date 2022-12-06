@@ -14,7 +14,7 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getAllPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.postUrl}`, {headers: environment.headers, withCredentials: environment.withCredentials} )
+    return this.http.get<Post[]>(`${this.postUrl}`, {headers: environment.headers, withCredentials: environment.withCredentials})
   }
 
   upsertPost(post: Post): Observable<Post> {

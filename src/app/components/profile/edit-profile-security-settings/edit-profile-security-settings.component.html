@@ -1,0 +1,51 @@
+<div>
+<h3 class="font-semibold text-lg">Change password</h3>
+<p class="my-3">Use this form to change your password. Once changed, your new password will be in effect next time you login.</p>
+<form
+    class="flex flex-col justify-center max-w-[400px] m-auto"
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+>
+    <mat-form-field>
+        <mat-label>Current Password</mat-label>
+        <input matInput type="password" formControlName="oldPassword" />
+    </mat-form-field>
+
+    
+    <mat-form-field>
+        <mat-label>New Password</mat-label>
+        <input matInput type="password" formControlName="newPassword" />
+        <mat-error></mat-error>
+    </mat-form-field>
+   
+
+    <mat-form-field>
+        <mat-label>Re-enter New Password</mat-label>
+        <input matInput type="password" formControlName="reenteredPassword" />
+        <mat-error></mat-error>
+    </mat-form-field>
+
+
+    <p class="font-semibold my-2 mx-auto"
+        [ngClass]="{
+            'text-green-600' : isUpdated,
+            'text-red-500' : hasError.oldPassword || hasError.newPassword || hasError.reenteredPassword
+        }"
+    >
+        {{ message }}
+    </p>
+
+    <button
+        type="submit"
+        class="w-[200px] justify-items-center flex m-auto justify-self-center justify-center items-center mt-3 py-3 bg-blue-400 text-white font-bold rounded-md hover:bg-blue-600 transition-colors"
+    >
+        <img 
+            class="relative w-6 animate-spin -left-[4%]" src="assets/icons/Circle.svg" alt="spinning circle"
+            *ngIf="isLoading"
+        />
+
+        <p>Change Password</p>
+    </button>
+</form>
+
+</div>

@@ -1,43 +1,23 @@
 <app-navbar></app-navbar>
 <div class="mx-5 lg:mx-7 xl:mx-20">
 
-    <!-- User's Hero Banner -->
-    <div class="box-shadow">
-        <div class="" id="profile">
-            <div class="bg-[url('https://th.bing.com/th/id/R.77d86c07a77caa50a1007988a9c5df5d?rik=FccQzPNYUxhKaw&pid=ImgRaw&r=0')] h-64" id="background"></div>
-    
-            <div class="grid grid-flow-col grid-cols-[max-content_1fr]" id="user_photo">
-                <img class="w-[120px] border-[5px] rounded-full border-white ml-5 mr-3 mt-3"  [src]="user_image" alt="user's photo">
-                
-                <div class="grid items-end">
-                    <div class="flex items-center justify-between w-full">
-                        <span class="text-white text-2xl text-shadow"> {{ user_first_name + ' ' + user_last_name }}</span>
-    
-    
-                        <!-- Edit Profile Link-->
-                        <a class="flex items-center uppercase text-[12px] font-semibold text-white text-shadow">
-                            <span class="tracking-wider">Edit profile</span>
-                            <mat-icon class="ml-1 mr-5">play_arrow</mat-icon>
-                        </a>
-    
-                    </div>
-                    
-                    <span class="font-semibold text-sm pb-1 text-gray-700">{{ user_city + ', ' + user_country }}</span>
-                </div>
-            </div>
-        
-            <!-- White line -->
-            <div class="bg-white h-8" id="profile_nav"></div>
-        </div>
-    </div>
-
+    <app-profile-hero-banner [isEditable]="isEditable" [heroBannerInformation]="profileHeroBanner"></app-profile-hero-banner>
 
     <div class="mt-4 grid grid-cols-[270px_1fr_1fr] lg:grid-cols-[360px_1fr_1fr] xl:grid-cols-4 gap-4">
 
         <aside>
             <!-- Personal Information | Container -->
             <div class="bg-white box-shadow p-4">
-                <app-profile-personal-information></app-profile-personal-information>
+                <app-profile-personal-information [profilePersonalInfo]="profilePersonalInfo">
+                    <button
+                        *ngIf="isEditable; else elseBlock" 
+                        class="w-full mt-2" 
+                        mat-raised-button color="primary"
+                    >Add Information</button>
+                    <ng-template #elseBlock>
+                        The personal information has not been provided
+                    </ng-template>
+                </app-profile-personal-information>
             </div>
 
             <!-- List of Friends-->
@@ -91,6 +71,23 @@
         
 
         <div class="col-span-2">
+            <div class="bg-white px-4 py-2 mb-4 box-shadow">
+                <form class="form">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Make a Post</mat-label>
+                        <textarea matInput autofocus formControlName="text"></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Add an Image?</mat-label>
+                        <input matInput formControlName="imageUrl">
+                    </mat-form-field>
+                    <div align="end">
+                        <button mat-raised-button color="warn" >Cancel</button>
+                        <button mat-raised-button color="primary" >Post</button>
+                    </div>
+                </form>
+            </div>
+            
 
             <div *ngFor="let post of posts">
                 <app-post [post]="post"></app-post>
