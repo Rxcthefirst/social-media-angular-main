@@ -12,7 +12,11 @@ export class AuthService {
   authUrl: string = `${environment.baseUrl}/auth`;
   currentUser: User
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.restoreSession().subscribe(response => {
+      this.currentUser = response;
+    })
+  }
 
   login(email: string, password: string): Observable<any> {
     const payload = {email:email, password:password};
@@ -30,5 +34,11 @@ export class AuthService {
   register(firstName: string, lastName: string, email: string, password: string): Observable<any> {
     const payload = {firstName: firstName, lastName: lastName, email: email, password: password};
     return this.http.post<any>(`${this.authUrl}/register`, payload, {headers: environment.headers});
+  }
+
+  restoreSession() : Observable<User> {
+    return this.http.get<User>(`${this.authUrl}/restore-session`, 
+                                {headers: environment.headers, withCredentials: environment.withCredentials}
+                              );
   }
 }

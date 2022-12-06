@@ -1,0 +1,15 @@
+<div class="mat-typography rounded-lg bg-slate-200 p-2 grid grid-flow-col grid-cols-[1fr_3fr] gap-x-2 max-w-[80wv] overflow-visible overflow-y-auto">
+    <app-edit-profile-sidebar (click)="onClick($event)"></app-edit-profile-sidebar>
+
+    <div class="px-4 py-2 bg-white box-shadow min-w-0" id="overflow-fix"
+        [ngSwitch]="showComponent | async"
+    >
+        <span *ngSwitchCase="'security settings'">
+            <h2>Security Settings</h2>
+            <mat-divider></mat-divider>
+            <app-edit-profile-security-settings></app-edit-profile-security-settings>
+
+        </span>
+       
+    </div>
+</div>

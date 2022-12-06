@@ -2,9 +2,11 @@
     {{inputComment.text}}
 </p>
 <div class="comment-reply" align="right">
+
     <div class="comment-reply-text" (click)="toggleReplyToComment()">
         reply
     </div>
+
     <form class="form" *ngIf="replyToComment" [formGroup]="commentForm" (ngSubmit)="submitReply($event)">
         <mat-form-field class="full-width" appearance="fill">
             <mat-label>Make a Post</mat-label>
@@ -15,7 +17,10 @@
             <button mat-raised-button color="primary" type="submit">Post</button>
         </div>
     </form>
+    
 </div>
+
+
 <div *ngFor="let comment of inputComment.comments" class="comment-container">
     <mat-divider></mat-divider>
     <app-comment [comment]="comment"></app-comment>
