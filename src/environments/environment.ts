@@ -1,5 +1,5 @@
 export const environment = {
-    production: true,
+    production: false,
     withCredentials: true,
     baseUrl: "http:localhost:8081",
     headers: {
