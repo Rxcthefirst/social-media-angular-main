@@ -1,7 +1,6 @@
-/src/environments/environments.ts
 node_modules
 /dist
 .angular
-src/environments/*
+
 
 
