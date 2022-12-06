@@ -1,0 +1,106 @@
+<app-navbar></app-navbar>
+<div class="mx-5 lg:mx-7 xl:mx-20">
+
+    <app-profile-hero-banner [isEditable]="isEditable" [heroBannerInformation]="profileHeroBanner"></app-profile-hero-banner>
+
+    <div class="mt-4 grid grid-cols-[270px_1fr_1fr] lg:grid-cols-[360px_1fr_1fr] xl:grid-cols-4 gap-4">
+
+        <aside>
+            <!-- Personal Information | Container -->
+            <div class="bg-white box-shadow p-4">
+                <app-profile-personal-information [profilePersonalInfo]="profilePersonalInfo">
+                    <button
+                        *ngIf="isEditable; else elseBlock" 
+                        class="w-full mt-2" 
+                        mat-raised-button color="primary"
+                    >Add Information</button>
+                    <ng-template #elseBlock>
+                        The personal information has not been provided
+                    </ng-template>
+                </app-profile-personal-information>
+            </div>
+
+            <!-- List of Friends-->
+            <div class="mt-4 py-4 bg-white box-shadow">
+                <h4 class="px-4 flex items-center justify-between">
+                    <span class="flex items-center">
+                        <mat-icon>group</mat-icon>
+                        <span class="ml-2 text-base font-semibold">
+                            Friends
+                        </span>
+                    </span>
+                    <a class="text-blue-600 underline">All 64 friends</a>
+                </h4>
+
+                <ul class="grid grid-cols-3 grid-rows-2 gap-x-1.5 gap-y-1 px-1">
+                    <li>
+                        <img class="w-full h-full object-cover" src="https://th.bing.com/th/id/OIP.dRxYDV441prSjH3e4upzwgHaE8?pid=ImgDet&rs=1">
+                    </li>
+                    <li>
+                        <img class="w-full h-full overflow-hidden object-cover" src="https://th.bing.com/th/id/OIP.M4s8U7VAp2Z5VzVVpzMujAHaFj?w=231&h=180&c=7&r=0&o=5&pid=1.7">
+                    </li>
+                    <li>
+                        <img class="w-full h-full overflow-hidden object-cover" src="https://th.bing.com/th/id/OIP.hwwFETHzhbdKpOeK0nLNxwHaE8?pid=ImgDet&rs=1">
+                    </li>
+                    <li>
+                        <img class="w-full h-full overflow-hidden object-cover" src="https://th.bing.com/th/id/OIP.S-jEU0Shax-51b1K5JMUPwHaEK?pid=ImgDet&rs=1">
+                    </li>
+                    <li>
+                        <img class="w-full h-full overflow-hidden object-cover" src="https://th.bing.com/th/id/OIP.J8c2WZPovxYc0O65WXEYHgHaD4?pid=ImgDet&rs=1">
+                    </li>
+                    <li>
+                        <img class="w-full h-full overflow-hidden object-cover" src="https://th.bing.com/th/id/OIP.B7HEsxCp6l__fGZeekFcugHaE1?pid=ImgDet&rs=1">
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="mt-4 py-4 bg-white box-shadow">
+                <h4 class="px-4 flex items-center justify-between">
+                    <span class="flex items-center">
+                        <mat-icon>photo</mat-icon>
+                        <span class="ml-2 text-base font-semibold">
+                            Photos
+                        </span>
+                    </span>
+                    <a class="text-blue-600 underline">All</a>
+                </h4>
+            </div>
+
+        </aside>
+        
+
+        <div class="col-span-2">
+            <div class="bg-white px-4 py-2 mb-4 box-shadow">
+                <form class="form">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Make a Post</mat-label>
+                        <textarea matInput autofocus formControlName="text"></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Add an Image?</mat-label>
+                        <input matInput formControlName="imageUrl">
+                    </mat-form-field>
+                    <div align="end">
+                        <button mat-raised-button color="warn" >Cancel</button>
+                        <button mat-raised-button color="primary" >Post</button>
+                    </div>
+                </form>
+            </div>
+            
+
+            <div *ngFor="let post of posts">
+                <app-post [post]="post"></app-post>
+            </div>
+           
+        </div>
+        
+    </div>
+    
+
+    <!--  -->
+</div>
+
+
+
+
