@@ -23,3 +23,7 @@
 .votecount{
     font-weight: bold;    
 }
+
+.vote_text{
+    vertical-align: center;
+}

@@ -1,15 +1,24 @@
 <!-- Section to Display Votes-->
 <div class="col-md-1">
     <div class="d-flex flex-column votebox">
-    <div class="p-2">
-        <button (click)="upvotePost()" class="upvote" [style.color]="post.upVote ? 'green' : ''">
-            Upvote
+    <div class="px-4 py-2 rounded-md bg-green-400 text-white font-semibold mr-2" >
+        <button (click)="upvotePost()" class="upvote transition-colors">
+            
+            <span class="flex items-center">
+                <mat-icon>thumb_up</mat-icon>
+                <span class="ml-2">Upvote</span>
+              </span>
         </button>
     </div>
     <div class="p-2 votecount">{{post.voteCount}}</div>
-    <div class="p-2">
-        <button (click)="downvotePost()" class="downvote">
-            DownVote
+    <div class="px-4 py-2 rounded-md bg-red-400 text-white font-semibold ml-2">
+        <button (click)="downvotePost()" class="downvote transition-colors">
+            
+
+            <span class="flex items-center">
+                <mat-icon>thumb_down</mat-icon>
+                <span class="ml-2">Downvote</span>
+              </span>
         </button>
     </div>
     </div>
