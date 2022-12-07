@@ -1,0 +1,16 @@
+<!-- Section to Display Votes-->
+<div class="col-md-1">
+    <div class="d-flex flex-column votebox">
+    <div class="p-2">
+        <button (click)="upvotePost()" class="upvote" [style.color]="post.upVote ? 'green' : ''">
+            Upvote
+        </button>
+    </div>
+    <div class="p-2 votecount">{{post.voteCount}}</div>
+    <div class="p-2">
+        <button (click)="downvotePost()" class="downvote">
+            DownVote
+        </button>
+    </div>
+    </div>
+</div>
