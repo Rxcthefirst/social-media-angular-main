@@ -9,9 +9,11 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class VoteService {
 
+  private voteUrl: string = `${environment.baseUrl}/vote`
+
   constructor(private http: HttpClient) { }
 
   vote(votePayload: Vote): Observable<any> {
-    return this.http.post('http://localhost:8081/vote/', votePayload, {headers: environment.headers, withCredentials: environment.withCredentials});
+    return this.http.post(`${this.voteUrl}`, votePayload, {headers: environment.headers, withCredentials: environment.withCredentials});
   }
 }
