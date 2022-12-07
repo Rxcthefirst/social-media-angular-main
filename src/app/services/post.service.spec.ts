@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
-
+import { HttpClient } from '@angular/common/http';
 import { PostService } from './post.service';
 
 describe('PostService', () => {
-  let service: PostService;
+  let postService: PostService;
+  let httpSpy: jasmine.SpyObj<HttpClient>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(PostService);
+    httpSpy = jasmine.createSpyObj('HttpClient',['get','put']);
+    postService = new PostService(httpSpy);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(postService).toBeTruthy();
   });
 });

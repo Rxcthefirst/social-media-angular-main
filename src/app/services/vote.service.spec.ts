@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
-
+import { HttpClient } from '@angular/common/http';
 import { VoteService } from './vote.service';
 
 describe('VoteService', () => {
-  let service: VoteService;
+  let voteService: VoteService;
+  let httpSpy: jasmine.SpyObj<HttpClient>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(VoteService);
+    httpSpy = jasmine.createSpyObj('HttpClient',['post']);
+    voteService = new VoteService(httpSpy);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(voteService).toBeTruthy();
   });
 });

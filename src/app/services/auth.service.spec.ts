@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { TestBed } from '@angular/core/testing';
-
 import { AuthService } from './auth.service';
+import { defer } from 'rxjs';
+import User from '../models/User';
 
 describe('AuthService', () => {
   let authService: AuthService;
@@ -9,6 +9,8 @@ describe('AuthService', () => {
 
   beforeEach(() => {
     httpSpy = jasmine.createSpyObj('HttpClient',['get','post']);
+    let user = new User(1,"email","first_name","last_name");
+    httpSpy.get.and.returnValue(defer(()=>Promise.resolve(user)))
     authService = new AuthService(httpSpy);
   });
 
