@@ -1,16 +1,20 @@
-import { TestBed } from '@angular/core/testing';
-
+import { HttpClient } from '@angular/common/http';
 import { AuthService } from './auth.service';
+import { defer } from 'rxjs';
+import User from '../models/User';
 
 describe('AuthService', () => {
-  let service: AuthService;
+  let authService: AuthService;
+  let httpSpy: jasmine.SpyObj<HttpClient>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(AuthService);
+    httpSpy = jasmine.createSpyObj('HttpClient',['get','post']);
+    let user = new User(1,"email","first_name","last_name");
+    httpSpy.get.and.returnValue(defer(()=>Promise.resolve(user)))
+    authService = new AuthService(httpSpy);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(authService).toBeTruthy();
   });
 });
