@@ -10,13 +10,14 @@
             <p>
                 {{post.text}}
             </p>
-            <div *ngFor="let comment of post.comments" class="comment-container">
-                <mat-divider></mat-divider>
-                <app-comment [comment]="comment"></app-comment>
-            </div>
+            
         </mat-card-content>
 
         <img mat-card-image *ngIf="post.imageUrl" src="{{ post.imageUrl }}" alt="Post Image">
+        <div *ngFor="let comment of post.comments" class="comment-container">
+            <mat-divider></mat-divider>
+            <app-comment [comment]="comment"></app-comment>
+        </div>
 
         <mat-card-actions align="end">
             <button mat-raised-button color="primary" (click)="toggleReplyToPost()">Reply</button>
