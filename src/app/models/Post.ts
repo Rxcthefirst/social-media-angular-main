@@ -7,6 +7,8 @@ export default class Post {
     voteCount: number
     author: User
     comments: Post[]
+    upVote: boolean
+    downVote: boolean
 
     constructor (id: number, text: string, imageUrl: string, voteCount: number,  author: User, comments: Post[]) {
         this.id = id

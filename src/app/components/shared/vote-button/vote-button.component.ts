@@ -16,14 +16,24 @@ import User from '../../../models/User';
 })
 export class VoteButtonComponent implements OnInit {
 
-  @Input() post: Post;
+  @Input('post') post: Post;
   votePayload: Vote;
+  upvoteColor: string;
+  downvoteColor: string;
 
   constructor(
     private voteService: VoteService,
     private authService: AuthService,
     private postService: PostService
     ) {
+
+
+  this.votePayload = {
+    id: 0,
+    voteType: VoteType.UPVOTE,
+    post: this.post,
+    user: this.authService.currentUser
+    }
 
   }
 
@@ -35,18 +45,21 @@ export class VoteButtonComponent implements OnInit {
   upvotePost() {
     this.votePayload.voteType = VoteType.UPVOTE;
     this.vote();
+    this.downvoteColor = '';
   }
 
   downvotePost() {
     this.votePayload.voteType = VoteType.DOWNVOTE;
     this.vote();
+    this.upvoteColor = '';
   }
 
   private vote() {
-    this.votePayload.postId = this.post.id;
-    this.voteService.vote(this.votePayload).subscribe(() => {
+    let newVote = new Vote(0, this.votePayload.voteType, this.post, this.authService.currentUser)
+    this.voteService.vote(newVote).subscribe(() => {
       this.updateVoteDetails();
     }, error => {
+      throw(error);
     });
   }
 
