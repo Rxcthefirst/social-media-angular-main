@@ -26,6 +26,7 @@ import { EditProfileSecuritySettingsComponent } from './components/profile/edit-
 import { ProfileHeroBannerComponent } from './components/profile/profile-hero-banner/profile-hero-banner.component';
 import { FourOFourPageComponent } from './pages/four-o-four-page/four-o-four-page.component';
 import { VoteButtonComponent } from './components/shared/vote-button/vote-button.component';
+import { PostDeleteButtonComponent } from './components/shared/post-delete-button/post-delete-button.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { VoteButtonComponent } from './components/shared/vote-button/vote-button
     EditProfileSecuritySettingsComponent,
     ProfileHeroBannerComponent,
     FourOFourPageComponent,
-    VoteButtonComponent
+    VoteButtonComponent,
+    PostDeleteButtonComponent
   ],
   imports: [
     BrowserModule,

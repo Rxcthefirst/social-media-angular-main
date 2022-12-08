@@ -32,4 +32,8 @@ export class PostService {
   getPost(id: number): Observable<Post> {
     return this.http.get<Post>(`${this.postUrl}/one/${id}`, {headers: environment.headers, withCredentials: environment.withCredentials})
   }
+
+  deletePost(id: number): Observable<Post> {
+    return this.http.delete<Post>(`${this.postUrl}/${id}`, {headers: environment.headers, withCredentials: environment.withCredentials})
+  }
 }

@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import Post from 'src/app/models/Post';
 import { AuthService } from 'src/app/services/auth.service';
 import { PostService } from 'src/app/services/post.service';
+import User from '../../models/User';
 
 @Component({
   selector: 'app-post',
@@ -17,6 +18,7 @@ export class PostComponent implements OnInit {
 
   @Input('post') post: Post
   replyToPost: boolean = false
+  currentUser: User = this.authService.currentUser
 
   constructor(private postService: PostService, private authService: AuthService) { }
 
