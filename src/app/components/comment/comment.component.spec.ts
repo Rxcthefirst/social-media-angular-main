@@ -51,7 +51,7 @@ describe('CommentComponent', () => {
     component.submitReply(mock);
     setTimeout(()=>{
       expect(component.replyToComment).toEqual(!oldVal);
-    }, 500);
+    }, 2000);
 
   });
 });

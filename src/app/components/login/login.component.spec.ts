@@ -55,7 +55,7 @@ describe('LoginComponent', () => {
     component.onSubmit(mock);
     setTimeout(()=>{
       expect(routerSpy.navigate).toHaveBeenCalled();
-    },100);
+    },2000);
   });
 
   it('should navigate to register on calling register', () => {

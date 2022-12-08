@@ -51,7 +51,7 @@ describe('PostComponent', () => {
     setTimeout(()=>{
       expect(component.replyToPost).toEqual(!oldVal);
       //expect(true).toBeTruthy();
-    }, 500);
+    }, 2000);
 
   });
 });

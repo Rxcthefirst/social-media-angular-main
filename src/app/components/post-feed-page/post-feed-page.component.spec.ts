@@ -52,6 +52,6 @@ describe('PostFeedPageComponent', () => {
     component.submitPost(mock);
     setTimeout(()=>{
       expect(component.profanity).toBeTruthy();
-    },500);
+    },2000);
   });
 });
