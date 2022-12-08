@@ -20,6 +20,7 @@
         </div>
 
         <mat-card-actions align="end">
+            <app-post-delete-button [post]="post" *ngIf="post.author.id==currentUser.id"></app-post-delete-button>
             <button mat-raised-button color="primary" (click)="toggleReplyToPost()">Reply</button>
         </mat-card-actions>
 
@@ -31,8 +32,13 @@
             <div align="end">
                 <button mat-raised-button color="warn" (click)="toggleReplyToPost()">Cancel</button>
                 <button mat-raised-button color="primary" type="submit">Post</button>
+                
             </div>
         </form>
-        <app-vote-button [post]="post"></app-vote-button>
+        <span>
+            <app-vote-button [post]="post"></app-vote-button>
+            
+        </span>
+        
     </mat-card>
 </div>
