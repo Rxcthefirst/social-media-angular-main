@@ -4,10 +4,8 @@ import { Vote } from 'src/app/models/Vote';
 import { VoteType } from './vote-type';
 import { AuthService } from 'src/app/services/auth.service';
 import { PostService } from 'src/app/services/post.service';
-import { throwError } from 'rxjs';
 
 import { VoteService } from 'src/app/services/vote.service';
-import User from '../../../models/User';
 
 @Component({
   selector: 'app-vote-button',
