@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { defer } from 'rxjs';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import Post from 'src/app/models/Post';
 import { AuthService } from 'src/app/services/auth.service';
 import { PostService } from 'src/app/services/post.service';
@@ -17,6 +17,10 @@ describe('PostFeedPageComponent', () => {
     getAllPosts(): Observable<Post[]> {
       let posts: Post[] = [];
       return defer(()=>Promise.resolve(posts));
+    },
+    upsertPost(post: Post): Observable<any> {
+      //return defer(()=>Promise.reject({error: "profanity"}))
+      return throwError(()=>{return {error: "profanity"}})
     }
   }
 
@@ -41,5 +45,13 @@ describe('PostFeedPageComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('profanity error sets profanity to true',()=> {
+    let mock = {preventDefault(){}};
+    component.submitPost(mock);
+    setTimeout(()=>{
+      expect(component.profanity).toBeTruthy();
+    },500);
   });
 });

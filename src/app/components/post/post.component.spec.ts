@@ -14,11 +14,13 @@ describe('PostComponent', () => {
   let authServiceStub: Partial<AuthService>;
 
   postServiceStub = {
-
+    upsertPost(post: Post): Observable<any>{
+      return defer(()=>Promise.resolve(post))
+    }
   }
 
   authServiceStub = {
-
+    currentUser: new User(0,"","","")
   }
 
   beforeEach(async () => {
@@ -40,5 +42,16 @@ describe('PostComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call toggleReply on successful submission',()=>{
+    let oldVal = component.replyToPost;
+    let mock = {preventDefault(){}};
+    component.submitReply(mock);
+    setTimeout(()=>{
+      expect(component.replyToPost).toEqual(!oldVal);
+      //expect(true).toBeTruthy();
+    }, 500);
+
   });
 });

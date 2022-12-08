@@ -37,7 +37,9 @@ export class RegisterComponent {
     let hasError = false;
     e.preventDefault();
 
-    Object.values(this.registerForm.controls).forEach((value: any) => { if (value.errors) hasError = true; })
+    Object.values(this.registerForm.controls).forEach((value: any) => { 
+      if (value.errors) hasError = true
+    ;})
     
     if (!hasError) {
       this.hasError = false;

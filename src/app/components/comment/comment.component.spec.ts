@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Observable, defer, throwError } from 'rxjs';
 import Post from 'src/app/models/Post';
 import User from 'src/app/models/User';
 import { AuthService } from 'src/app/services/auth.service';
@@ -14,12 +15,14 @@ describe('CommentComponent', () => {
   let user = new User(0,"","","");
   let post = new Post(0,"","",0,user,[]);
 
-  authServiceStub = {
-
+  postServiceStub = {
+    upsertComment(post: Post): Observable<any>{
+      return defer(()=>Promise.resolve(post))
+    }
   }
 
-  postServiceStub = {
-
+  authServiceStub = {
+    currentUser: new User(0,"","","")
   }
 
   beforeEach(async () => {
@@ -40,5 +43,15 @@ describe('CommentComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call toggleReply on successful submission',()=>{
+    let oldVal = component.replyToComment;
+    let mock = {preventDefault(){}};
+    component.submitReply(mock);
+    setTimeout(()=>{
+      expect(component.replyToComment).toEqual(!oldVal);
+    }, 500);
+
   });
 });
