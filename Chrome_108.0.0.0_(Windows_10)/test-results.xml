@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 108.0.0.0 (Windows 10)" package="" timestamp="2022-12-08T19:27:31" id="0" hostname="LAPTOP-CE7UQETJ" tests="35" errors="0" failures="0" time="0.267">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"/>
+  </properties>
+  <testcase name="PostFeedPageComponent profanity error sets profanity to true" time="0.054" classname="Chrome_108_0_0_0_(Windows_10).PostFeedPageComponent"/>
+  <testcase name="PostFeedPageComponent should create" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).PostFeedPageComponent"/>
+  <testcase name="EditProfileSidebarComponent should create" time="0.019" classname="Chrome_108_0_0_0_(Windows_10).EditProfileSidebarComponent"/>
+  <testcase name="LoginComponent should create" time="0.017" classname="Chrome_108_0_0_0_(Windows_10).LoginComponent"/>
+  <testcase name="LoginComponent should navigate to register on calling register" time="0.006" classname="Chrome_108_0_0_0_(Windows_10).LoginComponent"/>
+  <testcase name="LoginComponent should navigate to post-feed on login" time="0.006" classname="Chrome_108_0_0_0_(Windows_10).LoginComponent"/>
+  <testcase name="CommentComponent should call toggleReply on successful submission" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).CommentComponent"/>
+  <testcase name="CommentComponent should create" time="0.003" classname="Chrome_108_0_0_0_(Windows_10).CommentComponent"/>
+  <testcase name="AppComponent should have as title 'social-media-angular'" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.004" classname="Chrome_108_0_0_0_(Windows_10).AppComponent"/>
+  <testcase name="AuthService should call logout endpoint" time="0.001" classname="Chrome_108_0_0_0_(Windows_10).AuthService"/>
+  <testcase name="AuthService should call register endpoint" time="0.001" classname="Chrome_108_0_0_0_(Windows_10).AuthService"/>
+  <testcase name="AuthService should set currentUser on login" time="0.001" classname="Chrome_108_0_0_0_(Windows_10).AuthService"/>
+  <testcase name="AuthService should be created" time="0" classname="Chrome_108_0_0_0_(Windows_10).AuthService"/>
+  <testcase name="VoteButtonComponent should create" time="0.019" classname="Chrome_108_0_0_0_(Windows_10).VoteButtonComponent"/>
+  <testcase name="VoteButtonComponent should call voteService vote on upvote" time="0.006" classname="Chrome_108_0_0_0_(Windows_10).VoteButtonComponent"/>
+  <testcase name="VoteButtonComponent should call voteService vote on downvote" time="0.003" classname="Chrome_108_0_0_0_(Windows_10).VoteButtonComponent"/>
+  <testcase name="PostDeleteButtonComponent should create" time="0.006" classname="Chrome_108_0_0_0_(Windows_10).PostDeleteButtonComponent"/>
+  <testcase name="FriendsPageComponent should create" time="0.005" classname="Chrome_108_0_0_0_(Windows_10).FriendsPageComponent"/>
+  <testcase name="VoteService should be created" time="0" classname="Chrome_108_0_0_0_(Windows_10).VoteService"/>
+  <testcase name="FourOFourPageComponent should create" time="0.004" classname="Chrome_108_0_0_0_(Windows_10).FourOFourPageComponent"/>
+  <testcase name="ProfileService should be created" time="0" classname="Chrome_108_0_0_0_(Windows_10).ProfileService"/>
+  <testcase name="PostService should be created" time="0" classname="Chrome_108_0_0_0_(Windows_10).PostService"/>
+  <testcase name="UserCardComponent should create" time="0.004" classname="Chrome_108_0_0_0_(Windows_10).UserCardComponent"/>
+  <testcase name="ProfileHeroBannerComponent should create" time="0.01" classname="Chrome_108_0_0_0_(Windows_10).ProfileHeroBannerComponent"/>
+  <testcase name="PostComponent should call toggleReply on successful submission" time="0.011" classname="Chrome_108_0_0_0_(Windows_10).PostComponent"/>
+  <testcase name="PostComponent should create" time="0.004" classname="Chrome_108_0_0_0_(Windows_10).PostComponent"/>
+  <testcase name="EditProfileSecuritySettingsComponent should set message if passwords do not match" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).EditProfileSecuritySettingsComponent"/>
+  <testcase name="EditProfileSecuritySettingsComponent should create" time="0.005" classname="Chrome_108_0_0_0_(Windows_10).EditProfileSecuritySettingsComponent"/>
+  <testcase name="EditProfileSecuritySettingsComponent should not set error message if passwords match" time="0.004" classname="Chrome_108_0_0_0_(Windows_10).EditProfileSecuritySettingsComponent"/>
+  <testcase name="EditProfileComponent should create" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).EditProfileComponent"/>
+  <testcase name="RegisterComponent should call register if no errors" time="0.013" classname="Chrome_108_0_0_0_(Windows_10).RegisterComponent"/>
+  <testcase name="RegisterComponent should create" time="0.006" classname="Chrome_108_0_0_0_(Windows_10).RegisterComponent"/>
+  <testcase name="NavbarComponent should create" time="0.008" classname="Chrome_108_0_0_0_(Windows_10).NavbarComponent"/>
+  <testcase name="ProfilePersonalInformationComponent should create" time="0.007" classname="Chrome_108_0_0_0_(Windows_10).ProfilePersonalInformationComponent"/>
+  <system-out>
+    <![CDATA[Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'app-navbar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-user-card' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'app-user-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-user-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) LOG: 'hello'
+,Chrome 108.0.0.0 (Windows 10) WARN: 'Spec 'PostFeedPageComponent profanity error sets profanity to true' has no expectations.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'app-navbar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-user-card' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'app-user-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-user-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'PostFeedPageComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'EditProfileSidebarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'LoginComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'LoginComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'LoginComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'LoginComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'LoginComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) WARN: 'Spec 'LoginComponent should navigate to post-feed on login' has no expectations.'
+,Chrome 108.0.0.0 (Windows 10) WARN: 'Spec 'CommentComponent should call toggleReply on successful submission' has no expectations.'
+,Chrome 108.0.0.0 (Windows 10) WARN: 'Spec 'AuthService should set currentUser on login' has no expectations.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'VoteButtonComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element (used in the 'FriendsPageComponent' component template):
+1. If 'app-navbar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element (used in the 'FourOFourPageComponent' component template):
+1. If 'app-navbar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'UserCardComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-divider' is not a known element (used in the 'UserCardComponent' component template):
+1. If 'mat-divider' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-divider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-subtitle' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-subtitle' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-subtitle' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-actions' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-vote-button' is not a known element (used in the 'PostComponent' component template):
+1. If 'app-vote-button' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vote-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-post-delete-button' is not a known element (used in the 'PostComponent' component template):
+1. If 'app-post-delete-button' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-post-delete-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'post' since it isn't a known property of 'app-vote-button' (used in the 'PostComponent' component template).
+1. If 'app-vote-button' is an Angular component and it has the 'post' input, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vote-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'post' since it isn't a known property of 'app-post-delete-button' (used in the 'PostComponent' component template).
+1. If 'app-post-delete-button' is an Angular component and it has the 'post' input, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-post-delete-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) WARN: 'Spec 'PostComponent should call toggleReply on successful submission' has no expectations.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-subtitle' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-subtitle' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-subtitle' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element (used in the 'PostComponent' component template):
+1. If 'mat-card-actions' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-vote-button' is not a known element (used in the 'PostComponent' component template):
+1. If 'app-vote-button' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vote-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-post-delete-button' is not a known element (used in the 'PostComponent' component template):
+1. If 'app-post-delete-button' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-post-delete-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'post' since it isn't a known property of 'app-vote-button' (used in the 'PostComponent' component template).
+1. If 'app-vote-button' is an Angular component and it has the 'post' input, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vote-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'post' since it isn't a known property of 'app-post-delete-button' (used in the 'PostComponent' component template).
+1. If 'app-post-delete-button' is an Angular component and it has the 'post' input, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-post-delete-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'EditProfileSecuritySettingsComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'EditProfileSecuritySettingsComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'EditProfileSecuritySettingsComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'EditProfileSecuritySettingsComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-edit-profile-sidebar' is not a known element (used in the 'EditProfileComponent' component template):
+1. If 'app-edit-profile-sidebar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-edit-profile-sidebar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'RegisterComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'RegisterComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'RegisterComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card-header' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-card-title' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'RegisterComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a' (used in the 'RegisterComponent' component template).
+1. If 'a' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'formGroup' since it isn't a known property of 'form' (used in the 'RegisterComponent' component template).
+1. If 'form' is an Angular component and it has the 'formGroup' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-error' is not a known element (used in the 'RegisterComponent' component template):
+1. If 'mat-error' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-toolbar' is not a known element (used in the 'NavbarComponent' component template):
+1. If 'mat-toolbar' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'NavbarComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'span' (used in the 'NavbarComponent' component template).
+1. If 'span' is an Angular component and it has the 'routerLink' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'color' since it isn't a known property of 'mat-icon' (used in the 'NavbarComponent' component template).
+1. If 'mat-icon' is an Angular component and it has the 'color' input, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 108.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element (used in the 'ProfilePersonalInformationComponent' component template):
+1. If 'mat-icon' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
