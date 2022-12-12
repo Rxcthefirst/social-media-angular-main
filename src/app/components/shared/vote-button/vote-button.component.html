@@ -10,7 +10,7 @@
               </span>
         </button>
     </div>
-    <div class="p-2 votecount">{{post.voteCount}}</div>
+    <div class="p-2 votecount" [style.color]="upVote ? 'green': downVote ? 'red' :''">{{post.voteCount}}</div>
     <div class="px-4 py-2 rounded-md bg-red-400 text-white font-semibold ml-2">
         <button (click)="downvotePost()" class="downvote transition-colors">
             
